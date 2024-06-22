@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reizen zonder Grenzen - Ontdek Marokko</title>
+    <link rel="stylesheet" type="text/css" href="morocco.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="background"></div>
+    <div id="password-overlay">
+        <div class="password-container">
+            <h2>Voer leerling naam in om verder te gaan (wachtwoord is "Adam")</h2>
+            <input type="password" id="password-input" placeholder="Naam">
+            <button onclick="checkPassword()">Submit</button>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <header>
+            <div class="header-container">
+                <h1>Welkom bij Reizen zonder Grenzen</h1>
+                <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+                <nav>
+                    <ul>
+                        <li><a href="#about">Over ons</a></li>
+                        <li><a href="#destinations">Bestemmingen</a></li>
+                        <li><a href="#culture">Amazigh Cultuur</a></li>
+                        <li><a href="#rif">Rif en Abdelkrim</a></li>
+                        <li><a href="#more">Meer Over Marokko</a></li>
+                        <li><a href="#information">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section id="about">
+            <h2>Over ons</h2>
+            <p>Bij Reizen zonder Grenzen geloven we dat elke reis een kans is om iets nieuws te ontdekken, jezelf uit te dagen en onvergetelijke herinneringen te creëren. Of je nu droomt van een ontspannen strandvakantie, een avontuurlijke trekking in de bergen, of een culturele ontdekkingsreis door historische steden, wij zijn er om je te helpen die droom werkelijkheid te maken.</p>
+            <img src="moroccotea.jpg" alt="Over ons afbeelding" class="content-img">
+        </section>
+        
+        <section id="destinations">
+            <h2>Onze Bestemmingen</h2>
+            <p>Ontdek onze diverse bestemmingen, zoals Marokko met zijn kleurrijke souks, majestueuze Sahara-woestijn, betoverende Blauwe Stad Chefchaouen, historische medina van Fez en prachtige kust van Essaouira.</p>
+            <img src="chef.jpg" alt="Bestemmingen afbeelding" class="content-img">
+        </section>
+        
+        <section id="culture">
+            <h2>Amazigh Cultuur</h2>
+            <p>De Amazigh, ook bekend als Berbers, zijn de inheemse bevolking van Noord-Afrika. Hun rijke cultuur en geschiedenis gaan duizenden jaren terug. Van hun unieke taal en tradities tot hun kleurrijke kunst en ambachten, de Amazigh-cultuur is een essentieel onderdeel van Marokko's erfgoed.</p>
+        </section>
+        
+        <section id="rif">
+            <h2>Rif en Abdelkrim</h2>
+            <p>De Rif-regio in het noorden van Marokko is bekend om zijn adembenemende landschappen en rijke geschiedenis. Een prominente figuur uit deze regio is Abdelkrim El Khattabi, een Amazigh-leider die in de vroege 20e eeuw bekend werd door zijn strijd tegen de koloniale machten. Zijn erfenis leeft voort als een symbool van vrijheid en verzet. De Rif is ook bekend om zijn traditionele muziek, dans en festivals die jaarlijks duizenden bezoekers trekken. De prachtige berglandschappen en kustlijnen maken het een perfecte bestemming voor avonturiers en natuurliefhebbers.</p>
+        </section>
+
+        <section id="more">
+            <h2>Meer Over Marokko</h2>
+            <p>Leer meer over Marokko, een land van contrasten waar oude tradities samengaan met moderne invloeden. Verken de rijke cultuur, gastvrije mensen en adembenemende landschappen.</p>
+        </section>
+        
+        <section id="information">
+            <h2>Contact</h2>
+            <ul>
+                <li>Email: <a href="mailto:616985@x11.nu">616985@x11.nu</a></li>
+                <li>Telefoon nummer: <a href="tel:+31631692842">0631692842</a></li>
+                <li>Naam: Adam Mahdad X3H</li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('nav ul');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+    <script src="password.js"></script>
+</body>
+</html>
